@@ -25,4 +25,4 @@ server:
       afterMiddleware: fiori-tools-appreload
       configuration:
         flp:
-          theme: sap_horizon
+          theme: sap_horizon #will git with new project
