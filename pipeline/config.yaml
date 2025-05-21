@@ -4,7 +4,14 @@ general:
     # ... other stages ...
     Release:
       tmsUpload: true
-
+      cloudFoundryDeploy: true
+      cfApiEndpoint: "https://api.cf.us10-001.hana.ondemand.com"
+      cfOrg: "6dd8f039trial"
+      cfSpace: "dev"
+      cfAppName: "SAPFiori"
+      cfCredentialsId: "cf"
+      
+    tmsUpload:  
       nodeName: "dev" # e.g., 'QA_NODE'
       credentialsId: "ctmkeys"
       customDescription: "Fiori App deployed via CI/CD"
