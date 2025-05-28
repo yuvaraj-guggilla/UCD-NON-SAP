@@ -1,0 +1,12 @@
+# Example snippet for .pipeline/config.yaml
+general:
+  stages:
+    # ... other stages ...
+    Release:
+      tmsUpload: true
+
+      nodeName: "dev" # e.g., 'QA_NODE'
+      credentialsId: "ctmkeys"
+      customDescription: "Fiori App deployed via CI/CD"
+# ... other configurations .....
+#commit changes......
